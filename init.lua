@@ -1,9 +1,12 @@
-require('lazy_config')
+print("HELLO FROM init.lua")
 require('keymaps')
+require('lazy.lazy')
+require('lazy').setup('plugins')
+
 --vim.cmd("colorscheme sorbet")
 
-print("HELLO FROM init.lua")
 vim.cmd([[set tabstop=4 softtabstop=4
+set signcolumn=number
 set shiftwidth=4
 set relativenumber
 set number
@@ -20,12 +23,7 @@ syntax on
 --just testing what happens if I remove it
 
 
-require('lazy').setup({
-	spec = {
-		{import = "plugins"},
-	},
-	checker = {enabled = true}
-})
 
-vim.cmd("colorscheme dracula")
+vim.cmd("colorscheme tokyonight-storm")
 vim.api.nvim_set_hl(0, "Normal", {bg = "none"}) -- this sets the background to transparent I guess
+--require('mason_config')
