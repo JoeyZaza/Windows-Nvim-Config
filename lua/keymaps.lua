@@ -14,3 +14,7 @@ vim.keymap.set("n", "<leader>te", ":tabc<CR>")
 vim.keymap.set("n", "<leader>to", ":tabo<CR>")
 vim.keymap.set("n", "<a-l>", ":tabn<CR>")
 vim.keymap.set("n", "<a-h>", ":tabp<CR>")
+--vim.keymap.set("n", "<leader><leader>x", function() 
+--	vim.cmd.write
+--	":so"
+--end)
